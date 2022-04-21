@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Register</title>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
+
 <body>
     <header>
         <div class="containerHeader">
@@ -53,6 +55,52 @@
     </header>
 
 
+    <div class="container">
+
+
+        <main class="containerMain">
+            <section class="form">
+
+                <h1 class="title">Crea tu cuenta</h1>
+
+                <form action="#" method="post">
+                    <div class="caja nameUsu">
+                        <input class="campo" type="text" name="nameU" id="nameU" placeholder="Nombres">
+                    </div>
+                    <div class="caja lastNameUsu">
+                        <input class="campo" type="text" name="lastName" id="lastName" placeholder="Apellidos">
+                    </div>
+                    <div class="caja Dni">
+                        <input class="campo" type="text" name="dni" id="dni" placeholder="DNI">
+                    </div>
+
+                    <div class="caja mail">
+                        <input class="campo" type="email" id="mail" name="mail" placeholder="E-mail">
+                    </div>
+                    <div class="caja user">
+                        <input class="campo" type="text" id="user" name="user" placeholder="Usuario">
+                    </div>
+                    <div class="caja pass">
+                        <input class="campo" type="password" name="pass" id="pass" placeholder="Contraseña">
+                    </div>
+                    <div class="caja repPass">
+                        <input class="campo" type="password" name="repPass" id="repPass"
+                            placeholder="Repetir Contraseña">
+                    </div>
+
+                    <div class=" terminos">
+                        <input type="checkbox" name="termino" id="termino">
+                        <label class="textCond" for="condiciones">Acepto terminos y condiciones</label>
+                    </div>
+                    <input class="btnRegistro" type="submit" value="Registrarse">
+                </form>
+                <p>Ya tengo una cuenta. <a href="#" class="linkLoguin">Iniciar sesión</a> </p>
+
+            </section>
+        </main>
+    </div>
+
+
     <footer>
         <div class="elFooter">
             <div class="footerContenidoUno">
@@ -83,4 +131,5 @@
     </footer>
     <script src="../js/index.js"></script>
 </body>
+
 </html>

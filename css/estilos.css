@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -259,3 +260,81 @@ footer {
         footer .elFooter .footerContenidoUno .footerContenidoDos .redes a {
           margin: 5px;
           font-size: 25px; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: "Roboto", sans-serif; }
+
+/* contiene todo mi main */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* height: 100vh; */
+  background-color: #F2F2F2;
+  /* contienedor main */ }
+  .container .containerMain {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 90%;
+    height: 830px;
+    margin: 80px 0px 30px 0px;
+    /*etiqueta section que contine el form  */ }
+    .container .containerMain .form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 500px;
+      height: 750px;
+      padding: 10px;
+      border: 1px solid #ecf0f3;
+      border-radius: 6px;
+      background-color: #FFFFFF;
+      box-shadow: 0px 3px 8px 3px #b5b3b5;
+      /* titulo de mi form */
+      /* clase de los divs que contienen a los inputs */ }
+      @media (min-width: 1024px) {
+        .container .containerMain .form .caja {
+          width: 100%; } }
+      .container .containerMain .form .title {
+        margin: 30px 0px 20px 0px; }
+      .container .containerMain .form .caja {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0px;
+        /* mis inputs */ }
+        .container .containerMain .form .caja .campo {
+          width: 210px;
+          height: 35px;
+          padding: 8px 16px;
+          background-color: #f9fafb;
+          border: none;
+          border-radius: 6px;
+          font-size: 15px; }
+      .container .containerMain .form .terminos {
+        display: flex;
+        font-size: 14px;
+        justify-content: center; }
+        .container .containerMain .form .terminos .textCond {
+          margin-left: 8px; }
+      .container .containerMain .form .btnRegistro {
+        width: 242px;
+        height: 40px;
+        margin: 15px 0;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        font-size: 15px; }
+      .container .containerMain .form p {
+        margin-top: 15px;
+        font-size: 14px; }
+      .container .containerMain .form .linkLoguin {
+        color: #000;
+        cursor: pointer; }
