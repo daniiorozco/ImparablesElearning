@@ -1,0 +1,189 @@
+@import "generales";
+
+/* INICIO HEADER */
+.containerHeader{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: $color2;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.511);
+
+        .logo{
+            flex-basis: 20%;
+            margin-left: 45px;
+            margin-right: 10px;
+        }
+
+        .buscador{
+            flex-basis: 40%;
+            text-align: end;
+            margin-right: 10px;
+            @media(min-width:768px){
+                    flex-basis: 60%;
+                }
+        }
+
+        .ingreso{
+            flex-basis: 20%;
+            text-align: center;
+                a{
+                    border: 1px solid black;
+                    padding: 10px;
+                    margin-right: 5px;
+                }
+        }
+}
+
+/* INICIO NAV desplegable */
+
+/* INICIO FUNCION desplegable */
+
+nav #navMenu{
+    margin: 10px;
+    position: fixed;
+    z-index: 10;
+    top: 5px;
+}
+nav #navMenu > span{    
+    display: block;
+    width: 28px;
+    height: 2px;
+    border-radius: 9999px;
+    background-color: black;
+}
+nav #navMenu >span:not(:last-child){
+    margin-bottom: 7px;
+}
+#nav,#nav>span{
+    transition: all .4s ease-in-out;
+}
+#navMenu.active{
+    transition: .2s;
+    transition-delay: 0.1s;
+    transform: translateX(240px) rotate(45deg);
+}
+#navMenu.active >span:nth-child(2){/* primero hace este */
+    transition: .2s;
+    transition-delay: 0.2s;
+    width: 0;
+}
+#navMenu.active >span:nth-child(1){
+    transition: .2s;
+    transition-delay: 0.4s;
+    transform: translateY(9px);
+}
+#navMenu.active >span:nth-child(3){
+    transition: .2s;
+    transition-delay: 0.4s;
+    transform: translateY(-9px) rotate(90deg);   
+}
+
+/* FIN FUNCION desplegable */
+
+nav {
+    .menuLista{
+        position: fixed;
+        background-color: $color2;
+        height: 100%;
+        width: 300px;
+        top: -1px;
+        transform: translateX(-100%);
+        border: 1px solid $color3;
+    }
+}
+
+    nav .menuLista.active{
+        transition: .2s;
+        transform: translateX(0);
+    }
+    nav .menuLista ul{
+        margin-top: 55px;
+    }
+    nav .menuLista ul li{
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-right: 20px;
+        list-style: none;
+    }
+    nav .menuLista ul li:not(:last-child){
+        border-bottom: 1px solid $color3;
+    }
+    nav .menuLista ul li a{
+        font-size: 20px;
+    }
+    nav .menuLista ul li a div{
+        margin-bottom: 5px;
+    }
+    nav .menuLista ul li a div > i{
+        padding-right: 10px;
+    }
+    
+    /* FIN NAV desplegable */
+
+@media(min-width:1024px){
+    .containerHeader{
+
+        nav{
+            order: 2;
+            flex-basis: 75%;
+            display: flex;
+            justify-content: center;
+
+            .menuLista{
+                position: relative;
+                transform: translateX(0%);
+                overflow: auto;
+                width: 100%;
+                border: none;
+                
+                    ul{
+                        margin-top: 0;
+                        text-align: center;
+
+                        li{
+                            display: inline-block;
+                            margin: 10px;
+                            li:not(:last-child){
+                                border-bottom: none;
+                            }
+                            li:last-child{
+                                display: none;
+                            }
+                                a{
+                                    font-size: 17px;
+
+                                    i{
+                                        display: none;
+                                    }
+                                }
+                        }
+                    }
+            }
+        }
+
+        #navMenu{
+            display: none;
+        }
+        
+        .logo{
+            order: 1;
+            margin-left: 10px;
+            flex-basis: 10%;
+        }
+
+        .buscador{
+            order: 3;
+        }
+
+        .ingreso{
+            order: 4;
+        }
+    }
+}
+
+a {
+    color: $color3;
+    text-decoration: none;
+}

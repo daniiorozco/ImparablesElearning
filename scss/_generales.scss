@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+$fuente: 'Roboto', sans-serif;
+
+$color1: #E07BCD;
+$color2: #0B0E32;
+$color3: #EFF0FB;
+$color4: #C38DBD;
+$color5: #030027;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $fuente;
+}
