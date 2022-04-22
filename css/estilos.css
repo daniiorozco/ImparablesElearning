@@ -59,7 +59,7 @@ nav #navMenu > span {
   width: 28px;
   height: 2px;
   border-radius: 9999px;
-  background-color: black; }
+  background-color: #EFF0FB; }
 
 nav #navMenu > span:not(:last-child) {
   margin-bottom: 7px; }
@@ -174,7 +174,8 @@ html {
   font-family: "Roboto", sans-serif; }
 
 footer {
-  background-color: #0B0E32; }
+  background-color: #0B0E32;
+  color: #EFF0FB; }
   @media (min-width: 1024px) {
     footer .elFooter {
       display: flex;
@@ -198,6 +199,8 @@ footer {
       @media (min-width: 1024px) {
         footer .elFooter .footerContenidoUno .frase {
           order: 2; } }
+      footer .elFooter .footerContenidoUno .frase h3 {
+        color: #EFF0FB; }
     @media (min-width: 768px) {
       footer .elFooter .footerContenidoUno .listaNosotros {
         width: 85%; } }
@@ -300,9 +303,6 @@ html {
       box-shadow: 0px 3px 8px 3px #b5b3b5;
       /* titulo de mi form */
       /* clase de los divs que contienen a los inputs */ }
-      @media (min-width: 1024px) {
-        .container .containerMain .form .caja {
-          width: 100%; } }
       .container .containerMain .form .title {
         margin: 30px 0px 20px 0px; }
       .container .containerMain .form .caja {

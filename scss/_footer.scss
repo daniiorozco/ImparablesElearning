@@ -2,6 +2,7 @@
 
 footer {
     background-color: $color2;
+    color: $color3;
 
     .elFooter{
     @media(min-width:1024px){
@@ -23,12 +24,16 @@ footer {
                 .frase{
                     text-align: center;
                     margin-top: 18px;
+                    
                     @media(min-width:768px){
                         width: 50%;
                     }
                     @media(min-width:1024px){
                         order: 2;
                     }
+                        h3 {
+                            color: $color3;
+                        }
                 }
 
                     .listaNosotros {
@@ -76,6 +81,7 @@ footer {
                 }
 
                     .copyright{
+                
                         order: 2;
                         @media(min-width:1024px){
                             order: 1;
@@ -86,6 +92,7 @@ footer {
                                 text-align: center;
                                 margin: 10px 10px 30px 10px;
                                 font-size: 12px;
+                                
                             }
                         }
 
