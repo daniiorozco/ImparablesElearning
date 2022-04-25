@@ -1,0 +1,94 @@
+@import "generales";
+
+
+
+
+.main-login{
+display: flex;
+flex-direction: column;
+
+    h1{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+        .formulario-login{
+        margin: 100px 0px 60px 0px;
+            @media (min-width:1024px){
+                width: 70%;
+            }
+                .formulario{
+                display: flex;
+                flex-direction: column;
+                padding: 3%;
+                background-color: $color4;
+                box-shadow: 0px 3px 8px 3px rgba(181,179,181,1);
+                @media (min-width:768px){
+                    align-items: center;
+                }
+                @media (min-width:1024px){
+                    border-radius: 5px;
+                    margin-right: 0;
+                }
+                /* caja del formulario */
+                    input{
+               
+                        height: 30px;
+                        margin: 2% ;
+                        text-align: center;
+                        border-radius: 10px;
+                        border: none;
+                        outline-color: $color4 ;
+                        caret-color: $color4;
+                        @media (min-width:768px){
+                            width: 80%;
+                            height: 50px;
+                        }
+                     
+                 }
+                    .links{
+                        width: auto;
+                        padding: 2%;
+                        display: flex;
+                        justify-content: space-between;
+                        @media (min-width:768px){
+                            width: 80%;
+                            padding: 0;
+                        }
+                            a{
+                                text-decoration: none;
+                                color: $color2;
+                                &:hover{
+                                    text-decoration: underline;
+                                }    
+                            }
+                    
+                }
+                }
+            
+            }
+
+}
+
+
+
+
+
+
+
+
+@media (min-width:1024px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton:hover{
+        background-color: $color1;
+        transition:.4s;
+        cursor: pointer;
+
+    }
+
+}
