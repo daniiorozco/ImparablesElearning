@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -324,6 +325,100 @@ html {
       border-right: 0px;
       border-bottom: 1px solid grey;
       border-left: 0px; */ }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: "Roboto", sans-serif; }
+
+* {
+  margin: 0%; }
+
+header {
+  position: relative;
+  z-index: 2; }
+
+.conteinerHTML {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap; }
+  .conteinerHTML .titulo {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 1.5em; }
+  .conteinerHTML .clase {
+    width: 70%;
+    height: auto;
+    margin: 50px 0px;
+    text-align: center; }
+    .conteinerHTML .clase h3 {
+      font-size: 2em; }
+    .conteinerHTML .clase p {
+      margin-bottom: 20px;
+      font-size: 1.5em; }
+    .conteinerHTML .clase .video {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden; }
+      .conteinerHTML .clase .video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        border: none; }
+  .conteinerHTML .teorico {
+    padding: 10px 20%;
+    background-color: #E07BCD;
+    font-size: 1.3em;
+    border-radius: 5px;
+    margin: 20px; }
+  .conteinerHTML .formulario {
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2em; }
+    .conteinerHTML .formulario .check {
+      z-index: 1;
+      margin: 30px 15px;
+      transform: scale(2); }
+    .conteinerHTML .formulario .lecciones {
+      font-weight: bold; }
+  .conteinerHTML .barradeprogreso {
+    width: 70%;
+    margin: 30px 0 20px; }
+    .conteinerHTML .barradeprogreso h3 {
+      font-size: 2em;
+      text-align: center; }
+    .conteinerHTML .barradeprogreso .barra {
+      display: flex;
+      width: 100%;
+      height: 30px;
+      background-color: #c7c7c7;
+      padding: 20px 5px;
+      border-radius: 100px;
+      margin: 20px;
+      align-items: center; }
+    .conteinerHTML .barradeprogreso .progreso {
+      height: 30px;
+      border-radius: 100px;
+      width: 33.33%;
+      background-color: #0B0E32; }
+  .conteinerHTML .autoevaluacion {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 50px; }
+    .conteinerHTML .autoevaluacion a {
+      margin: 10px;
+      color: #030027;
+      font-weight: bold;
+      text-decoration: underline; }
 
 * {
   padding: 0;
