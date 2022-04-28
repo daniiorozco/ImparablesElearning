@@ -1,5 +1,10 @@
 @import "generales";
 
+header {
+    position: absolute;
+    z-index: 1;
+}
+
 /* INICIO HEADER */
 .containerHeader{
     display: flex;

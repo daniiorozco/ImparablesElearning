@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -20,6 +21,10 @@ html {
 
 html {
   font-family: "Roboto", sans-serif; }
+
+header {
+  position: absolute;
+  z-index: 1; }
 
 /* INICIO HEADER */
 .containerHeader {
@@ -570,3 +575,200 @@ html {
         cursor: pointer; }
       .container .containerMain .form .linkLoguin:hover {
         text-decoration: underline; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: "Roboto", sans-serif; }
+
+.main-index {
+  display: flex; }
+  .main-index .img-fondo-index {
+    background-image: url(../imgs/img-index.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 70vh;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media (min-width: 1024px) {
+      .main-index .img-fondo-index {
+        background-position: center center;
+        height: 98vh; } }
+    .main-index .img-fondo-index::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: 205px;
+      margin-top: 50px;
+      background-color: rgba(0, 0, 0, 0.6); }
+      @media (min-width: 1024px) {
+        .main-index .img-fondo-index::before {
+          margin-bottom: 0; } }
+    .main-index .img-fondo-index .contenedor-texto {
+      width: 90%;
+      margin: 0 auto; }
+    .main-index .img-fondo-index h1, .main-index .img-fondo-index h2 {
+      position: relative;
+      color: #fff;
+      text-align: center;
+      font-size: 25px;
+      text-shadow: 3px -1px 9px #505050; }
+    .main-index .img-fondo-index h1 {
+      margin-bottom: 20%; }
+      @media (min-width: 500px) {
+        .main-index .img-fondo-index h1 {
+          margin-bottom: 10%; } }
+      @media (min-width: 900px) {
+        .main-index .img-fondo-index h1 {
+          font-size: 40px; } }
+    @media (min-width: 900px) {
+      .main-index .img-fondo-index h2 {
+        font-size: 35px; } }
+    .main-index .img-fondo-index h2 span {
+      font-weight: bolder;
+      text-decoration: underline; }
+
+.seccion-items {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+  @media (min-width: 700px) {
+    .seccion-items {
+      width: 85%;
+      margin: 0 auto;
+      margin-top: 15%; } }
+  @media (min-width: 900px) {
+    .seccion-items {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 10%; } }
+  @media (min-width: 900px) {
+    .seccion-items .container-primera-linea, .seccion-items .container-segunda-linea {
+      display: flex;
+      margin: 20px;
+      padding: 5px; } }
+  .seccion-items .container-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15%; }
+    @media (min-width: 700px) {
+      .seccion-items .container-items {
+        flex-direction: row; } }
+    @media (min-width: 900px) {
+      .seccion-items .container-items {
+        margin-bottom: 10%;
+        margin-left: 5%; } }
+  .seccion-items .circulo {
+    display: flex;
+    justify-content: center;
+    background-color: #0B0E32;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 5%; }
+    .seccion-items .circulo img {
+      width: 80%;
+      fill: #EFF0FB; }
+  .seccion-items h3 {
+    font-size: 25px;
+    text-align: center; }
+    @media (min-width: 700px) {
+      .seccion-items h3 {
+        width: 60%;
+        margin: 0 auto; } }
+    @media (min-width: 900px) {
+      .seccion-items h3 {
+        margin-left: 15px;
+        width: auto; } }
+
+.cursos-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto; }
+  .cursos-index h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 10%;
+    text-decoration: underline 3px; }
+  @media (min-width: 1024px) {
+    .cursos-index .contenedor-cursos {
+      display: flex;
+      flex-direction: row; } }
+  .cursos-index .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E07BCD;
+    width: 150px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 20%; }
+    @media (min-width: 768px) {
+      .cursos-index .card {
+        width: 500px;
+        height: 160px; } }
+    @media (min-width: 1024px) {
+      .cursos-index .card {
+        width: 350px;
+        height: 150px;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        margin-right: 50px; } }
+    .cursos-index .card p {
+      font-weight: bolder;
+      color: #fff;
+      font-size: 20px; }
+      @media (min-width: 768px) {
+        .cursos-index .card p {
+          font-size: 30px; } }
+
+.profesores-index {
+  width: 90%;
+  margin: 0 auto; }
+  .profesores-index h2 {
+    text-align: center;
+    text-decoration: underline 3px; }
+  .profesores-index .contenedor-profesores {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center; }
+    @media (min-width: 768px) {
+      .profesores-index .contenedor-profesores {
+        flex-direction: row; } }
+    .profesores-index .contenedor-profesores div {
+      margin-bottom: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .profesores-index .contenedor-profesores div img {
+        display: flex;
+        border-radius: 50%;
+        width: 30%; }
+        @media (min-width: 768px) {
+          .profesores-index .contenedor-profesores div img {
+            width: 25%; } }
+      .profesores-index .contenedor-profesores div h3 {
+        margin-top: 5%;
+        text-align: center; }
