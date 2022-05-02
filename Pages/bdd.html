@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de JavaScript</title>
+    <title>Curso de Base de Datos</title>
+    <!-- estilos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
+
 <body>
+    <!-- cabecera -->
     <header>
         <div class="containerHeader">
             <nav>
@@ -19,10 +23,10 @@
                 </div>
                 <div class="menuLista">
                     <ul>
-                        <li><a href="">
+                        <li><a href="/index.html">
                                 <div><i class="bi bi-house-door-fill"></i>Home</div>
                             </a></li>
-                        <li><a href="">
+                        <li><a href="/Pages/cursos.html">
                                 <div><i class="bi bi-mortarboard-fill"></i>Cursos</div>
                             </a></li>
                         <li><a href="">
@@ -38,22 +42,100 @@
                 </div>
             </nav>
             <div class="logo">
-                <a href=""><img src="./img/devjump 1.png" alt="Logo-DevJump"></a>
+                <a href="/index.html"><img src="./img/devjump 1.png" alt="Logo-DevJump"></a>
 
             </div>
             <div class="buscador">
                 <form action="">
-                    <a href=""><i class="bi bi-search"></i></a>
+                    <a href="" aria-label="recuadro para buscar contendio"><i class="bi bi-search"></i></a>
                     <!-- <input type="search"> -->
                 </form>
             </div>
             <div class="ingreso">
-                <a href="">Entra</a>
+                <a href="" aria-label="enlace al formulario para inicio de sesion">Entra</a>
             </div>
         </div>
     </header>
+    <!-- menu -->
+    <main class="conteinerHTML">
 
+        <div class="titulo">
+            <h1>Base de Datos</h1>
+            <h2>Clases grabadas</h2>
+        </div>
 
+        <div class="clase">
+            <h3>Clase 1</h3>
+            <p>En ésta clase se considerará como hacer las relaciones entre las tablas definiendo la clave foránea, esto
+                tiene una gran importancia para acceder a los datos. Veremos también diferentes consultas de
+                DML(Lenguaje de Manipulación de Datos) como lectura, alta,modificación y eliminación de datos en una
+                tabla. Esto se hará utilizando el programa de phpMyAdmin.
+            </p>
+            <div class="video">
+                <iframe src="https://drive.google.com/file/d/1WAT7APnW6BWRHZHaxX1bQiJHkDV69KP-/preview" width="640"
+                    height="480" allow="autoplay" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="clase">
+            <h3>Clase 2</h3>
+            <p>En esta clase se verán conceptos muy importantes como el protocolo de comunicación de cliente servidor y
+                sus diferentes capas. Tipos de servidores, hosting y repaso de la estructura de consultas SQL.
+            </p>
+            <div class="video">
+                <iframe src="https://drive.google.com/file/d/1IpSayaBabaBqzvcvLSgfvfuEkhFOioTJ/preview" width="640"
+                    height="480" allow="autoplay" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="clase">
+            <h3>Clase 3</h3>
+            <p>En esta clase Aprenderemos a usar Workbench, como crear una conexión, además realizaremos una actividad,
+                que consta de crear algunas tablas, estas las realizaremos por medio de consultas usando DML(Lenguaje de
+                Manipulación de Datos).
+            </p>
+            <div class="video">
+                <iframe src="https://drive.google.com/file/d/1L7GNEJKiCYqivTvBnHGlDUAe1W7bIl_W/preview" width="640"
+                    height="480" allow="autoplay" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="teorico">
+            <a href="https://drive.google.com/drive/folders/1fVTfoSgd-9MACKZ1tB1IRqiJgUQubI3J" target="_blank"
+                rel="noopener noreferrer" aria-label="enlace que lleva al drive con material teorico">Material
+                teorico</a>
+
+        </div>
+        <div class="formulario">
+            <form>
+                <label class="lecciones">Lecciones aprendidas </label> <br>
+
+                <label for="clase1" aria-label="Marque si termino la leccion">Clase 1</label>
+                <input class="check" type="checkbox" name="" id=""> <br>
+                <label for="clase2" aria-label="Marque si termino la leccion">Clase 2</label>
+                <input class="check" type="checkbox" name="" id=""><br>
+                <label for="clase3" aria-label="Marque si termino la leccion">Clase 3</label>
+                <input class="check" type="checkbox" name="" id="">
+
+            </form>
+
+        </div>
+        <div class="barradeprogreso">
+            <h3>Barra de progreso</h3>
+            <div class="barra">
+
+                <div class="progreso"></div>
+
+            </div>
+        </div>
+        <div class="autoevaluacion">
+            <h2>Autoevaluación</h2>
+            <p>Para obtener su certificado de finalización del curso, debe realizar la siguiente autoevaluación:</p>
+            <a href="#" aria-label="enlace para completar formulario de lo aprendido en clase">
+                <p> Click aquí cuando estés listo! 🤓</p>
+            </a>
+        </div>
+    </main>
+
+    <!-- pie de pagina -->
     <footer>
         <div class="elFooter">
             <div class="footerContenidoUno">
@@ -75,13 +157,17 @@
                     <p>copyright Devjump Celula 1 2022 ©</p>
                 </div>
                 <div class="redes">
-                    <a href=""><i class="bi bi-facebook"></i></a><a href=""><i class="bi bi-instagram"></i></a><a
-                        href=""><i class="bi bi-linkedin"></i></a><a href=""><i class="bi bi-twitter"></i></a><a
-                        href=""><i class="bi bi-youtube"></i></a>
+                    <a href="https://www.facebook.com/arbustait/" aria-label="enlace Facebook" target="_blank" ><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/arbustait/" aria-label="enlace instagram"><i class="bi bi-instagram" target="_blank" ></i></a>
+                    <a href="https://www.linkedin.com/company/arbusta/mycompany/" aria-label="enlace linkedin" target="_blank" ><i class="bi bi-linkedin"></i></a>
+                     <a href="https://twitter.com/arbustaIT" aria-label="enlace twitter" target="_blank" ><i class="bi bi-twitter"></i></a>
+                     <a href="https://www.youtube.com/arbustait" aria-label="enlace youtube" target="_blank" ><i class="bi bi-youtube"></i></a>
                 </div>
             </div>
         </div>
     </footer>
     <script src="../js/index.js"></script>
 </body>
+
 </html>
