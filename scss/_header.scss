@@ -19,16 +19,57 @@ header {
             flex-basis: 20%;
             margin-left: 45px;
             margin-right: 10px;
+            z-index: 0;
         }
 
         .buscador{
-            flex-basis: 40%;
+            display: flex;
+            flex-basis: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
             text-align: end;
-            margin-right: 10px;
+            margin-right: 10px; 
             @media(min-width:768px){
                     flex-basis: 60%;
+            }
+
+            .contenedor-search{
+                display: none;
+                justify-content: space-between;
+                align-items: center;
+                width: 80%;
+                height: 30px;
+                border-radius: 5px;
+                color: $color2;
+                background-color: $color3;
+
+                .bi-search {
+                    display: block;
+                    color: $color3;
                 }
-        }
+            }
+            
+            #search {
+                width: 90%;
+                height: 25px;
+                margin-left: 5px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+                form{
+                   width: 90%;
+                   margin: 0 auto;
+                   
+                    i {
+                        color: $color3;
+                        @media (min-width:900px){
+                            margin-left: 30px;
+                        }
+                }
+            }
+                }
 
         .ingreso{
             flex-basis: 20%;
@@ -92,7 +133,6 @@ nav #navMenu >span:not(:last-child){
 nav {
     .menuLista{
         position: fixed;
-        background-color: $color2;
         height: 100%;
         width: 300px;
         top: -1px;
@@ -144,9 +184,13 @@ nav {
                 overflow: auto;
                 width: 100%;
                 border: none;
+            
+            .cerrar-sesion{
+                display: none;
+            }
                 
                     ul{
-                        margin-top: 0;
+                        margin-top: 10px;
                         text-align: center;
 
                         li{
@@ -193,5 +237,8 @@ nav {
 a {
     color: $color3;
     text-decoration: none;
+    &:hover{
+    color: $color1;
+    }
 }
 

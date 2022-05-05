@@ -8,6 +8,10 @@
     <title>Curso de Base de Datos</title>
     <!-- estilos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
@@ -23,10 +27,10 @@
                 </div>
                 <div class="menuLista">
                     <ul>
-                        <li><a href="/index.html">
+                        <li><a href="../index.html">
                                 <div><i class="bi bi-house-door-fill"></i>Home</div>
                             </a></li>
-                        <li><a href="/Pages/cursos.html">
+                        <li><a href="./cursos.html">
                                 <div><i class="bi bi-mortarboard-fill"></i>Cursos</div>
                             </a></li>
                         <li><a href="">
@@ -36,23 +40,27 @@
                                 <div><i class="bi bi-telephone-fill"></i>Contacto</div>
                             </a></li>
                         <li><a href="">
-                                <div><i class="bi bi-box-arrow-in-right"></i>Cerrar sesion</div>
+                                <div class="cerrar-sesion"><i class="bi bi-box-arrow-in-right"></i>Cerrar sesion</div>
                             </a></li>
                     </ul>
                 </div>
             </nav>
             <div class="logo">
-                <a href="/index.html"><img src="./img/devjump 1.png" alt="Logo-DevJump"></a>
+                <a href="../index.html"><img src="./img/devjump 1.png" alt="Logo-DevJump"></a>
 
             </div>
             <div class="buscador">
-                <form action="">
-                    <a href="" aria-label="recuadro para buscar contendio"><i class="bi bi-search"></i></a>
-                    <!-- <input type="search"> -->
-                </form>
+                <div class="contenedor-search">
+                    <input type="search" name="" id="search" class="search">
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFF0FB" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
             </div>
             <div class="ingreso">
-                <a href="" aria-label="enlace al formulario para inicio de sesion">Entra</a>
+                <a href="./login.html" aria-label="enlace al formulario para inicio de sesion">Entra</a>
             </div>
         </div>
     </header>
@@ -157,12 +165,16 @@
                     <p>copyright Devjump Celula 1 2022 ©</p>
                 </div>
                 <div class="redes">
-                    <a href="https://www.facebook.com/arbustait/" aria-label="enlace Facebook" target="_blank" ><i
+                    <a href="https://www.facebook.com/arbustait/" aria-label="enlace Facebook" target="_blank"><i
                             class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/arbustait/" aria-label="enlace instagram"><i class="bi bi-instagram" target="_blank" ></i></a>
-                    <a href="https://www.linkedin.com/company/arbusta/mycompany/" aria-label="enlace linkedin" target="_blank" ><i class="bi bi-linkedin"></i></a>
-                     <a href="https://twitter.com/arbustaIT" aria-label="enlace twitter" target="_blank" ><i class="bi bi-twitter"></i></a>
-                     <a href="https://www.youtube.com/arbustait" aria-label="enlace youtube" target="_blank" ><i class="bi bi-youtube"></i></a>
+                    <a href="https://www.instagram.com/arbustait/" aria-label="enlace instagram"><i
+                            class="bi bi-instagram" target="_blank"></i></a>
+                    <a href="https://www.linkedin.com/company/arbusta/mycompany/" aria-label="enlace linkedin"
+                        target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://twitter.com/arbustaIT" aria-label="enlace twitter" target="_blank"><i
+                            class="bi bi-twitter"></i></a>
+                    <a href="https://www.youtube.com/arbustait" aria-label="enlace youtube" target="_blank"><i
+                            class="bi bi-youtube"></i></a>
                 </div>
             </div>
         </div>

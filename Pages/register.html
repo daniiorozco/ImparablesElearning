@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
@@ -21,10 +25,10 @@
                 </div>
                 <div class="menuLista">
                     <ul>
-                        <li><a href="">
+                        <li><a href="../index.html">
                                 <div><i class="bi bi-house-door-fill"></i>Home</div>
                             </a></li>
-                        <li><a href="">
+                        <li><a href="./cursos.html">
                                 <div><i class="bi bi-mortarboard-fill"></i>Cursos</div>
                             </a></li>
                         <li><a href="">
@@ -34,23 +38,27 @@
                                 <div><i class="bi bi-telephone-fill"></i>Contacto</div>
                             </a></li>
                         <li><a href="">
-                                <div><i class="bi bi-box-arrow-in-right"></i>Cerrar sesion</div>
+                                <div class="cerrar-sesion"><i class="bi bi-box-arrow-in-right"></i>Cerrar sesion</div>
                             </a></li>
                     </ul>
                 </div>
             </nav>
             <div class="logo">
-                <a href=""><img src="./img/devjump 1.png" alt="Logo-DevJump"></a>
+                <a href="../index.html"><img src="./img/devjump 1.png" alt="Logo-DevJump"></a>
 
             </div>
             <div class="buscador">
-                <form action="">
-                    <a href=""><i class="bi bi-search"></i></a>
-                    <!-- <input type="search"> -->
-                </form>
+                <div class="contenedor-search">
+                    <input type="search" name="" id="search" class="search">
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFF0FB" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
             </div>
             <div class="ingreso">
-                <a href="">Entra</a>
+                <a href="./login.html">Entra</a>
             </div>
         </div>
     </header>
@@ -66,7 +74,8 @@
 
                 <form action="#" method="post">
                     <div class="caja nameUsu">
-                        <input class="campo" type="text" name="nameU" id="nameU" placeholder="Nombres" required autofocus>
+                        <input class="campo" type="text" name="nameU" id="nameU" placeholder="Nombres" required
+                            autofocus>
                     </div>
                     <div class="caja lastNameUsu">
                         <input class="campo" type="text" name="lastName" id="lastName" placeholder="Apellidos" required>

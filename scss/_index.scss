@@ -83,6 +83,7 @@ display: flex;
         width: 90%;
         margin: 0 auto;
         margin-top: 10%;
+        justify-content: space-between;
     }
    
     
@@ -90,7 +91,8 @@ display: flex;
         @media(min-width:900px){
             display: flex;
             margin: 20px;
-            padding: 5px;    
+            padding: 5px;
+            justify-content: space-between;    
             }  
         }
 
@@ -119,6 +121,9 @@ display: flex;
                         img {
                            width: 80%;
                            fill: $color3;
+                           @media (min-width: 900px){
+
+                           }
                         }
                 }
 
@@ -199,6 +204,8 @@ margin: 0 auto;
     h2 {
         text-align: center;
         text-decoration: underline 3px;
+        margin-bottom: 3%;
+        margin-top: 3%;
     }
 
     .contenedor-profesores {
@@ -236,4 +243,82 @@ margin: 0 auto;
                     }
             }
     }
+}
+
+.opiniones-index{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+
+        h2 {
+            text-align: center;
+            text-decoration: 3px underline;
+            margin-bottom: 3%;
+        }
+
+        .container-card-opiniones{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+
+                .card-opiniones{
+                    width: 70vw;
+                    height: 80vh;
+                    border-radius: 10px;
+                    background-color: $color4;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    align-content: stretch;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    @media (min-width: 768px) {
+                        width: 60vw;
+                        height: 70vh;
+                    }
+
+                    img{
+                        display: flex;
+                        justify-content: center;
+                        border-radius: 50%;
+                        width: 30%;
+                        @media (min-width: 768px) {
+                            width: 20%;
+                        }
+
+                    }
+
+                    h4 {
+                        margin-top: -5%;
+                    }
+
+                    p{
+                        width: 85%;
+                        margin: 0 auto;
+                        font-style: italic;
+                        font-size: 20px;
+                        margin-top: -5%;
+                    }
+                }
+        }
+}
+
+.carousel-control-prev {
+    margin-left: -15%;
+}
+
+.carousel-control-prev-icon {
+    margin-left: -10%;
+    background-color: $color2;
+}
+
+.carousel-control-next {
+    margin-right: -15%;
+}
+
+.carousel-control-next-icon {
+    margin-right: -10%;
+    background-color: $color2;
 }

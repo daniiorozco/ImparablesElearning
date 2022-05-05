@@ -10,8 +10,8 @@
 
 
     .box {
-        background-color: $color3;
-        border: 1px solid grey;
+        background-color: #0b0e32df;
+        color: $color3;
         width: 500px;
         height: 350px;
         display: flex;
@@ -20,26 +20,28 @@
         margin: 50px;
         text-align: center;
         justify-content: center;
+        box-shadow: 0px 3px 8px 3px rgba(181,179,181,1);
+        border-radius: 5px;
     }
 
     .myButton {
-        box-shadow: inset 0px 1px 3px 0px #91b8b3;
-        background: linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
-        background-color: #768d87;
+        box-shadow: inset 0px 1px 3px 0px $color1;
+        background: linear-gradient(to bottom, $color1 5%, $color1 100%);
         border-radius: 5px;
-        border: 1px solid #566963;
         display: inline-block;
         cursor: pointer;
-        color: #ffffff;
+        color: #fff;
         font-size: 15px;
         font-weight: bold;
         padding: 11px 23px;
         text-decoration: none;
-        text-shadow: 0px -1px 0px #2b665e;
+        text-shadow: 0px -1px 0px $color5;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
 
         &:hover {
-            background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
-            background-color: #6c7c7c;
+            background: linear-gradient(to bottom, $color4 5%, $color1 100%);
         }
 
         &:active {
@@ -62,10 +64,6 @@
       justify-content: center;
       text-align: center;
       margin-top: 50px;
-     /*  border-top: 0px;
-      border-right: 0px;
-      border-bottom: 1px solid grey;
-      border-left: 0px; */
   }
 
   
