@@ -840,6 +840,20 @@ html {
     @media (min-width: 768px) {
       .cursos-index p {
         font-size: 30px; } }
+  .cursos-index button {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: transparent;
+    border-color: #EFF0FB;
+    padding: 5px; }
+    .cursos-index button:hover {
+      background-color: #EFF0FB;
+      color: #0B0E32; }
+    .cursos-index button a {
+      color: #EFF0FB; }
+      .cursos-index button a:hover {
+        color: #0B0E32; }
 
 .profesores-index {
   width: 90%;
