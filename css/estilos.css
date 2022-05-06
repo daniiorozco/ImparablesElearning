@@ -73,9 +73,11 @@ header {
       margin-left: 90%; }
   .containerHeader .ingreso {
     flex-basis: 20%;
-    text-align: center; }
+    text-align: center;
+    width: 10%; }
     .containerHeader .ingreso a {
-      border: 1px solid black;
+      border: 1px solid #EFF0FB;
+      border-radius: 5px;
       padding: 10px;
       margin-right: 5px; }
 
