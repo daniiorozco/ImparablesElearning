@@ -740,8 +740,11 @@ html {
     text-align: center;
     font-size: 30px;
     font-weight: bolder;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
     text-decoration: underline 3px; }
+    @media (min-width: 768px) {
+      .cursos-index h2 {
+        margin-bottom: 10%; } }
     @media (min-width: 1024px) {
       .cursos-index h2 {
         margin-bottom: 0; } }
@@ -752,7 +755,7 @@ html {
     .cursos-index .contenedor-cursos {
       display: flex;
       flex-direction: row;
-      margin-top: -10%; } }
+      margin-top: -5%; } }
   .cursos-index .contenedor-cursos .flip-container {
     display: flex;
     align-items: center;

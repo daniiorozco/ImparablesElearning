@@ -154,8 +154,11 @@ display: flex;
         text-align: center;
         font-size: 30px;
         font-weight: bolder;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
         text-decoration: underline 3px;
+        @media (min-width: 768px){
+            margin-bottom: 10%;
+        }
         @media (min-width: 1024px){
             margin-bottom: 0;
         }
@@ -168,7 +171,7 @@ display: flex;
         @media (min-width: 1024px){
         display: flex;
         flex-direction: row;
-        margin-top: -10%;
+        margin-top: -5%;
         }
 
         .flip-container {
