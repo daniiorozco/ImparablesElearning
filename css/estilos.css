@@ -825,10 +825,20 @@ html {
         margin-bottom: 50px;
         margin-right: 50px; } }
   .cursos-index .contenedor-cursos .back {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
     background-color: #030027;
     transform: rotateY(180deg); }
+    @media (min-width: 768px) {
+      .cursos-index .contenedor-cursos .back {
+        width: 500px;
+        height: 160px; } }
     @media (min-width: 1024px) {
       .cursos-index .contenedor-cursos .back {
+        width: 350px;
+        height: 160px;
         margin-top: 70px; } }
   @media (min-width: 1024px) {
     .cursos-index .contenedor-cursos .front {
@@ -841,12 +851,17 @@ html {
       .cursos-index p {
         font-size: 30px; } }
   .cursos-index button {
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
-    border-radius: 5px;
     background-color: transparent;
     border-color: #EFF0FB;
-    padding: 5px; }
+    color: #0B0E32;
+    border-radius: 5px; }
+    @media (min-width: 768px) {
+      .cursos-index button {
+        width: 50%;
+        margin: 0 auto;
+        padding: 5px; } }
     .cursos-index button:hover {
       background-color: #EFF0FB;
       color: #0B0E32; }

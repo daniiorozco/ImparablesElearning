@@ -249,9 +249,19 @@ display: flex;
             }
           }
           .back {
+            width: 200px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
             background-color: $color5;
             transform: rotateY(180deg);
+            @media (min-width: 768px){
+                width: 500px;
+                height: 160px;
+            }
             @media (min-width:1024px){
+                width: 350px;
+                height: 160px;
                 margin-top: 70px;
             }
           }
@@ -271,12 +281,17 @@ display: flex;
                 }
 
                 button {
-                    width: 50%;
+                    width: 90%;
                     margin: 0 auto;
-                    border-radius: 5px;
                     background-color: transparent;
                     border-color: $color3;
+                    color:$color2;
+                    border-radius: 5px;
+                    @media (min-width: 768px){
+                    width: 50%;
+                    margin: 0 auto;
                     padding: 5px;
+                    } 
                     &:hover{
                         background-color: $color3;
                         color: $color2;
