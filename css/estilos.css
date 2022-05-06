@@ -732,18 +732,53 @@ html {
   justify-content: center;
   align-items: center;
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 5%; }
   .cursos-index h2 {
     text-align: center;
     font-size: 30px;
     font-weight: bolder;
     margin-bottom: 10%;
     text-decoration: underline 3px; }
+    @media (min-width: 1024px) {
+      .cursos-index h2 {
+        margin-bottom: 0; } }
+  @media (min-width: 768px) {
+    .cursos-index .contenedor-cursos {
+      margin-bottom: -10%; } }
   @media (min-width: 1024px) {
     .cursos-index .contenedor-cursos {
       display: flex;
-      flex-direction: row; } }
-  .cursos-index .card {
+      flex-direction: row;
+      margin-top: -10%; } }
+  .cursos-index .contenedor-cursos .flip-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: transparent;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 40%;
+    perspective: 1000px; }
+    @media (min-width: 768px) {
+      .cursos-index .contenedor-cursos .flip-container {
+        width: 500px;
+        height: 60px;
+        margin-bottom: 30%;
+        margin-top: 20%; } }
+    @media (min-width: 1024px) {
+      .cursos-index .contenedor-cursos .flip-container {
+        width: 350px;
+        height: 180px;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        margin-right: 50px; } }
+  .cursos-index .contenedor-cursos .card {
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -753,11 +788,11 @@ html {
     border-radius: 10px;
     margin-bottom: 20%; }
     @media (min-width: 768px) {
-      .cursos-index .card {
+      .cursos-index .contenedor-cursos .card {
         width: 500px;
         height: 160px; } }
     @media (min-width: 1024px) {
-      .cursos-index .card {
+      .cursos-index .contenedor-cursos .card {
         width: 350px;
         height: 150px;
         flex-direction: column;
@@ -765,13 +800,46 @@ html {
         margin-left: 50px;
         margin-bottom: 50px;
         margin-right: 50px; } }
-    .cursos-index .card p {
-      font-weight: bolder;
-      color: #fff;
-      font-size: 20px; }
-      @media (min-width: 768px) {
-        .cursos-index .card p {
-          font-size: 30px; } }
+  .cursos-index .contenedor-cursos .flip-container:hover .card {
+    transform: rotateY(180deg); }
+  .cursos-index .contenedor-cursos .front, .cursos-index .contenedor-cursos .back {
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 768px) {
+      .cursos-index .contenedor-cursos .front, .cursos-index .contenedor-cursos .back {
+        width: 500px;
+        height: 160px; } }
+    @media (min-width: 1024px) {
+      .cursos-index .contenedor-cursos .front, .cursos-index .contenedor-cursos .back {
+        width: 350px;
+        height: 150px;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        margin-right: 50px; } }
+  .cursos-index .contenedor-cursos .back {
+    background-color: #030027;
+    transform: rotateY(180deg); }
+    @media (min-width: 1024px) {
+      .cursos-index .contenedor-cursos .back {
+        margin-top: 70px; } }
+  @media (min-width: 1024px) {
+    .cursos-index .contenedor-cursos .front {
+      margin-top: 50px; } }
+  .cursos-index p {
+    font-weight: bolder;
+    color: #fff;
+    font-size: 20px; }
+    @media (min-width: 768px) {
+      .cursos-index p {
+        font-size: 30px; } }
 
 .profesores-index {
   width: 90%;
