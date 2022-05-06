@@ -21,7 +21,7 @@ function inicializarEventos() {
     $('.ingreso').hide(100);
     $('.contenedor-search').css('display', 'flex');
     $('.contenedor-search').css('justify-content', 'space-between');
-    $('.buscador').css('margin', '50px');
+    $('svg').css('margin-left', '-30%');
   }
 
   function saleMouse() {
