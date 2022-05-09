@@ -4,7 +4,7 @@
 
 - [**Carolina Calónico**](https://github.com/caritocalonico) - _25 años, Programadora FullStack, Hobbies: Jugar juegos de computadora._ -
 - [**Daniela Londoño**](https://github.com/DanielaArbi) - _23 años, Desarrolladora Full Stack Trainee, Estudiante en Programación de computadoras, Hobbies: jugar futbol, ver pelicular y series._ -
-- [**Joaquín Delgado**](https://github.com/Joaquin-Zanoni) - _breve descripción_ -
+- [**Joaquín Delgado**](https://github.com/Joaquin-Zanoni) - _21 años, Programador Full Stack Trainee, Hobbies: Jugar a la play_ -
 - [**Micaela Casebonne**](https://github.com/Micasebonne12) - _breve descripción_ -
 - [**Soledad Vallejos**](https://github.com/MSoledadVallejos) - _27 años, Desarrolladora Full Stack Trainee, Estudiante de Análisis de Sistemas, Hobbies: Escuchar música._  -
 
