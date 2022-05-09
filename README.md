@@ -36,6 +36,18 @@ finalice de ver los contenidos.
 
  'Roboto', sans-serif
 
+## Páginas en las que nos inspiramos
+
+* [Crehana](https://www.crehana.com/ar/) - Plataforma de desarrollo de talento que ayuda a organizaciones y personas a ser más competitivas
+* [CoderHouse](https://www.coderhouse.com/) - Comunidad de aprendizaje online en vivo
+* [Platzi](https://platzi.com/) - Plataforma de aprendizaje desde cero o especialización en las áreas más demandadas del trabajo digital
+* [Udemy](https://www.udemy.com/) - Página que ofrece tanto cursos gratis como de pago
+* [Educacion IT](https://www.educacionit.com/) - Plataforma que ofrece cursos de pago en tecnología
+* [Digital House](https://www.digitalhouse.com/ar) - Plataforma que ofrece cursos, programas y carreras de pago en tecnología
+
+
+_Nos inspiramos en estas páginas, ya que son las más conocidas que ofrecen cursos de programación_
+
 ## Link para visualizar primera Sprint Review:
 
 https://docs.google.com/presentation/d/1eeWuTqNInK_vSxZkx87lGBTAXdTbE3t9NmRmV0bUYIo/edit?usp=sharing
