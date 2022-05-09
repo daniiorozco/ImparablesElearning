@@ -1,3 +1,4 @@
+//Menú desplegable
 const navMenu=document.querySelector("#navMenu");
 const menuLista= document.querySelector(".menuLista");
 navMenu.addEventListener("click",()=>{
@@ -5,7 +6,7 @@ navMenu.addEventListener("click",()=>{
     menuLista.classList.toggle("active")
 })
 
-// INPUT SEARCH
+// Efecto de buscador desplegable 
 let x = $(document);
 x.ready(inicializarEventos);
 
@@ -29,11 +30,5 @@ function inicializarEventos() {
     $('.menuLista').show(100);
     $('.logo').show(100);
     $('.ingreso').show(100);         
+    $('svg').css('margin-left', '70%');
 } 
-
-
-$(() => {
-    $("h1").slideUp("slow", function () {
-    $("h2").fadeIn(3000);
-    }).slideDown(1000);
-});
