@@ -76,20 +76,20 @@
                 <form action="#" method="post">
                     <div class="caja nameUsu">
                         <input class="campo" type="text" name="nameU" id="nameU" placeholder="Nombres" required
-                            autofocus>
+                            autofocus pattern="[a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]{2,30}( [a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]+)*$">
                     </div>
                     <div class="caja lastNameUsu">
-                        <input class="campo" type="text" name="lastName" id="lastName" placeholder="Apellidos" required>
+                        <input class="campo" type="text" name="lastName" id="lastName" placeholder="Apellidos" required pattern="[a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]{2,30}( [a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]+)*$">
                     </div>
                     <div class="caja Dni">
-                        <input class="campo" type="text" name="dni" id="dni" placeholder="DNI" required>
+                        <input class="campo" type="number" name="dni" id="dni" placeholder="DNI" required pattern="[0-9]{8,8}">
                     </div>
 
                     <div class="caja mail">
                         <input class="campo" type="email" id="mail" name="mail" placeholder="E-mail" required>
                     </div>
                     <div class="caja user">
-                        <input class="campo" type="text" id="user" name="user" placeholder="Usuario" required>
+                        <input class="campo" type="text" id="user" name="user" placeholder="Usuario" required pattern="[a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]{2,30}( [a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]+)*$">
                     </div>
                     <div class="caja pass">
                         <input class="campo" type="password" name="pass" id="pass" placeholder="Contraseña" required>
