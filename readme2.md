@@ -1,6 +1,6 @@
 # Información del proceso 
 ## Integrantes del grupo
-* [**Carolina Calónico**](https://github.com/caritocalonico) - *breve descripción* - 
+* [**Carolina Calónico**](https://github.com/caritocalonico) - *25 años, Programadora FullStack, Hobbies: Jugar juegos de computadora.* - 
 * [**Daniela Londoño**](https://github.com/DanielaArbi) - *breve descripción* - 
 * [**Joaquín Delgado**](https://github.com/Joaquin-Zanoni) - *breve descripción* - 
 * [**Micaela Casebonne**](https://github.com/Micasebonne12) - *breve descripción* - 
