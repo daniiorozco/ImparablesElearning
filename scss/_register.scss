@@ -2,90 +2,145 @@
 
 
 
-    
 
-    /* contiene todo mi main */
-    .container {
+
+/* contiene todo mi main */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #F2F2F2;
+
+
+    /* contienedor main */
+    .containerMain {
         display: flex;
-        flex-direction: column;
+        /*   flex-wrap: nowrap; */
         justify-content: center;
-        align-items: center;
-        width: 100%;
-        background-color: #F2F2F2;
-       
+        width: 90%;
+        height: 830px;
+        margin: 80px 0px 30px 0px;
 
-        /* contienedor main */
-        .containerMain {
+
+        /*etiqueta section que contine el form  */
+        .form {
             display: flex;
-          /*   flex-wrap: nowrap; */
-            justify-content: center;
-            width: 90%;
-            height: 830px;
-            margin: 80px 0px 30px 0px;
+            align-items: center;
+            flex-direction: column;
+            width: 500px;
+            height: 90%;
+            padding: 10px;
+            border: 1px solid #ecf0f3;
+            border-radius: 6px;
+            background-color: #FFFFFF;
+            box-shadow: 0px 3px 8px 3px rgba(181, 179, 181, 1);
 
+            #formulario{
+                width: 90%;
 
-            /*etiqueta section que contine el form  */
-            .form {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                width: 500px;
-                height: 750px;
-                padding: 10px;
-                border: 1px solid #ecf0f3;
-                border-radius: 6px;
-                background-color: #FFFFFF;
-                box-shadow: 0px 3px 8px 3px rgba(181,179,181,1);
-
-
-                
-                /* titulo de mi form */
-                .title {
-                    margin: 30px 0px 20px 0px;
-                    font-weight: bold;
-                    font-size: 30px;
-                  
+                .formulario__input-error {
+                    font-size: 12px;
+                    margin-bottom: 0;
+                    margin-top: 5px;
+                    color: #bb2929;
+                    display: none;
                 }
-
-                /* clase de los divs que contienen a los inputs */
-                
-                .caja {
-                    display: flex;
-                    flex-direction: column;
-                    margin: 20px 0px;
-                   
-
-                    /* mis inputs */
-                    .campo {
-                        width: 230px;
-                        height: 35px;
-                        padding: 8px 16px;
-                        background-color: #f9fafb;
-                        border: none;
-                        border-radius: 6px;
-                        font-size: 15px;
-
-                      
-                    }
-                   
-
+                .formulario__input-error-activo {
+                    display: block;
                 }
-               
-                .terminos{
-                    display: flex;
+                .formulario__mensaje {
+                    height: 45px;
+                    line-height: 45px;
+                    background: #F66060;
+                    padding: 0 15px;
+                    border-radius: 3px;
+                    display: none;
+                }
+                .formulario__mensaje-activo {
+                    display: block;
+                }
+                
+                .formulario__mensaje p {
+                    margin: 0;
+                }
+                .formulario__mensaje-exito {
                     font-size: 14px;
-                   justify-content: center;
-
-                   .textCond{
-                       margin-left: 8px;
-                   }
+                    color: #119200;
+                    font-weight: 700;
+                    text-align: center;
+                    display: none;
                 }
+                
+                .formulario__mensaje-exito-activo {
+                    display: block;
+                }
+            }
 
-                .btnRegistro{
+            /* titulo de mi form */
+            .title {
+                margin: 30px 0px 20px 0px;
+                font-weight: bold;
+                font-size: 30px;
+
+            }
+
+            /* clase de los divs que contienen a los inputs */
+
+            .caja {
+                display: flex;
+                flex-direction: column;
+                margin: 20px 0px;
+                position: relative;
+
+                /* mis inputs */
+                .campo {
+                    width: 100%;
+                    height: 35px;
+                    padding: 8px 16px;
+                    background-color: #f9fafb;
+                    border: none;
+                    border-radius: 6px;
+                    font-size: 15px;
+
+
+                }
+                .formulario__validacion-estado {
+                    position: absolute;
+                    right: 10px;
+                    bottom: 15px;
+                    z-index: 100;
+                    font-size: 16px;
+                   
+                }
+                .formulario__grupo-correcto  .formulario__validacion-estado {
+                    color: #1ed12d;
+                    opacity: 1;
+                }
+                .formulario__grupo-incorrecto  .formulario__validacion-estado {
+                    color: #bb2929;
+                    opacity: 1;
+                }
+            }
+
+            .terminos {
+                display: flex;
+                font-size: 14px;
+                justify-content: center;
+
+                .textCond {
+                    margin-left: 8px;
+                }
+            }
+             .btnDivRegistro{
+                display: flex;
+                justify-content: center;
+                .btnRegistro {
 
                     width: 242px;
                     height: 40px;
-                    margin:15px 0;
+                    margin: 15px 0;
                     cursor: pointer;
                     border-radius: 5px;
                     border: none;
@@ -93,24 +148,26 @@
                     background-color: $color2;
                     color: $color3;
                 }
+             }
+            
 
-                p{
-                    margin-top: 15px;
-                    font-size: 14px;
-                }
+            p {
+                margin-top: 15px;
+                font-size: 14px;
+            }
 
-                .linkLoguin{
-                    color: #000;
-                    cursor: pointer;
-                 
-                }
-                .linkLoguin:hover{
-                    text-decoration: underline;
-                }
-                
+            .linkLoguin {
+                color: #000;
+                cursor: pointer;
+
+            }
+
+            .linkLoguin:hover {
+                text-decoration: underline;
             }
 
         }
 
     }
 
+}

@@ -7,10 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../imgs/favicon.ico">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
@@ -32,10 +30,12 @@
                         <li><a href="./cursos.html" aria-label="enlace seccion cursos">
                                 <div><i class="bi bi-mortarboard-fill"></i>Cursos</div>
                             </a></li>
-                        <li><a href="https://arbusta.net/nosotros/" target="_blank" aria-label="enlace seccion sobre nosotros">
+                        <li><a href="https://arbusta.net/nosotros/" target="_blank"
+                                aria-label="enlace seccion sobre nosotros">
                                 <div><i class="bi bi-people-fill"></i>Sobre nosotros</div>
                             </a></li>
-                        <li><a href="https://arbusta.net/contacto-es/" target="_blank" aria-label="elace seccion contacto">
+                        <li><a href="https://arbusta.net/contacto-es/" target="_blank"
+                                aria-label="elace seccion contacto">
                                 <div><i class="bi bi-telephone-fill"></i>Contacto</div>
                             </a></li>
                         <li><a href="">
@@ -45,7 +45,8 @@
                 </div>
             </nav>
             <div class="logo">
-                <a href="../index.html" aria-label="Enlace pagina principal"><img src="../imgs/devjump.png" alt="Logo-DevJump"></a>
+                <a href="../index.html" aria-label="Enlace pagina principal"><img src="../imgs/devjump.png"
+                        alt="Logo-DevJump"></a>
 
             </div>
             <div class="buscador">
@@ -73,41 +74,77 @@
 
                 <h1 class="title">Crea tu cuenta</h1>
 
-                <form action="#" method="post">
-                    <div class="caja nameUsu">
-                        <input class="campo" type="text" name="nameU" id="nameU" placeholder="Nombres" required
-                            autofocus pattern="[a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]{2,30}( [a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]+)*$">
-                    </div>
-                    <div class="caja lastNameUsu">
-                        <input class="campo" type="text" name="lastName" id="lastName" placeholder="Apellidos" required pattern="[a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]{2,30}( [a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]+)*$">
-                    </div>
-                    <div class="caja Dni">
-                        <input class="campo" type="number" name="dni" id="dni" placeholder="DNI" required pattern="[0-9]{8,8}">
+                <form action="#" method="post" id="formulario">
+
+                    <div class="caja nameUsu div__nombre">
+                        <input class="campo formulario__input grupo__nombre" type="text" name="nombre" id="nameU"
+                            placeholder="Nombres" autofocus>
+                        <!--  <i class="formulario__validacion-estado fas fa-times-circle"></i> -->
+                        <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede
+                            contener letras y espacio.</p>
                     </div>
 
-                    <div class="caja mail">
-                        <input class="campo" type="email" id="mail" name="mail" placeholder="E-mail" required>
+                    <div class="caja lastNameUsu div__apellido">
+                        <input class="campo grupo__apellido" type="text" name="apellido" id="lastName"
+                            placeholder="Apellidos">
+                        <!-- <i class="formulario__validacion-estado fas fa-times-circle"></i> -->
+                        <p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede
+                            contener letras y espacio.</p>
                     </div>
-                    <div class="caja user">
-                        <input class="campo" type="text" id="user" name="user" placeholder="Usuario" required pattern="[a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]{2,30}( [a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]+)*$">
-                    </div>
-                    <div class="caja pass">
-                        <input class="campo" type="password" name="pass" id="pass" placeholder="Contraseña" required>
-                    </div>
-                    <div class="caja repPass">
-                        <input class="campo" type="password" name="repPass" id="repPass"
-                            placeholder="Repetir Contraseña" required>
+                    <div class="caja Dni dni">
+                        <input class="campo grupo__dni" type="text" name="dni" id="dni" placeholder="DNI">
+                        <!-- <i class="formulario__validacion-estado fas fa-times-circle"></i> -->
+                        <p class="formulario__input-error">El DNI tiene que ser de 8 digitos y solo puede contener
+                            números.</p>
                     </div>
 
-                    <div class=" terminos">
+                    <div class="caja mail div__mail">
+                        <input class="campo grupo__mail" type="email" id="mail" name="mail" placeholder="E-mail">
+                        <!-- <i class="formulario__validacion-estado fas fa-times-circle"></i> -->
+                        <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos,
+                            guiones y guion bajo.</p>
+                    </div>
+                    <div class="caja user div__usuario">
+                        <input class="campo grupo__usuario" type="text" id="user" name="usuario" placeholder="Usuario">
+                        <!-- <i class="formulario__validacion-estado fas fa-times-circle"></i> -->
+                        <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede
+                            contener numeros, letras y guion bajo.</p>
+                    </div>
+                    <div class="caja pass div__password">
+                        <input class="campo grupo__password" type="password" name="password" id="pass"
+                            placeholder="Contraseña">
+                        <!-- <i class="formulario__validacion-estado fas fa-times-circle"></i> -->
+                        <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                    </div>
+                    <div class="caja repPass div__password2">
+                        <input class="campo grupo__password2" type="password" name="password2" id="repPass"
+                            placeholder="Repetir Contraseña">
+                        <!-- <i class="formulario__validacion-estado fas fa-times-circle"></i> -->
+                        <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                    </div>
+
+                    <div class=" terminos grupo__termino">
                         <input type="checkbox" name="termino" id="termino" aria-label="terminos y condiciones">
                         <label class="textCond" for="condiciones">Acepto terminos y condiciones</label>
                     </div>
-                    <input class="btnRegistro" type="submit" value="Registrarse">
+
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+                            correctamente. </p>
+                    </div>
+
+                    <div class="btnDivRegistro"> <button class="btnRegistro" type="submit"
+                            value="Registrarse">Registrarse</button>
+
+                    </div>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!
+                    </p>
                 </form>
-                <p>Ya tengo una cuenta. <a href="./login.html" class="linkLoguin" aria-label="enlace iniciar sesion">Iniciar sesión</a> </p>
+                <p>Ya tengo una cuenta. <a href="./login.html" class="linkLoguin"
+                        aria-label="enlace iniciar sesion">Iniciar sesión</a> </p>
 
             </section>
+
         </main>
     </div>
 
@@ -124,7 +161,8 @@
                         <a href="">Términos y condiciones</a>
                         <a href="">Póliticas de privacidad</a>
                         <a href="">Preguntas frecuentes</a>
-                        <a href="https://arbusta.net/contacto-es/" target="_blank" aria-label="elace seccion contacto">Contacto</a>
+                        <a href="https://arbusta.net/contacto-es/" target="_blank"
+                            aria-label="elace seccion contacto">Contacto</a>
                     </div>
                 </div>
             </div>
@@ -136,7 +174,7 @@
                     <a href="https://www.facebook.com/arbustait/" aria-label="enlace Facebook" target="_blank"><i
                             class="bi bi-facebook"></i></a>
                     <a href="https://www.instagram.com/arbustait/" aria-label="enlace instagram" target="_blank"><i
-                            class="bi bi-instagram" ></i></a>
+                            class="bi bi-instagram"></i></a>
                     <a href="https://www.linkedin.com/company/arbusta/mycompany/" aria-label="enlace linkedin"
                         target="_blank"><i class="bi bi-linkedin"></i></a>
                     <a href="https://twitter.com/arbustaIT" aria-label="enlace twitter" target="_blank"><i
@@ -148,6 +186,8 @@
         </div>
     </footer>
     <script src="../js/header.js"></script>
+    <script src="../js/validRegister.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

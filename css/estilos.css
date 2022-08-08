@@ -562,7 +562,7 @@ html {
       align-items: center;
       flex-direction: column;
       width: 500px;
-      height: 750px;
+      height: 90%;
       padding: 10px;
       border: 1px solid #ecf0f3;
       border-radius: 6px;
@@ -570,6 +570,35 @@ html {
       box-shadow: 0px 3px 8px 3px #b5b3b5;
       /* titulo de mi form */
       /* clase de los divs que contienen a los inputs */ }
+      .container .containerMain .form #formulario {
+        width: 90%; }
+        .container .containerMain .form #formulario .formulario__input-error {
+          font-size: 12px;
+          margin-bottom: 0;
+          margin-top: 5px;
+          color: #bb2929;
+          display: none; }
+        .container .containerMain .form #formulario .formulario__input-error-activo {
+          display: block; }
+        .container .containerMain .form #formulario .formulario__mensaje {
+          height: 45px;
+          line-height: 45px;
+          background: #F66060;
+          padding: 0 15px;
+          border-radius: 3px;
+          display: none; }
+        .container .containerMain .form #formulario .formulario__mensaje-activo {
+          display: block; }
+        .container .containerMain .form #formulario .formulario__mensaje p {
+          margin: 0; }
+        .container .containerMain .form #formulario .formulario__mensaje-exito {
+          font-size: 14px;
+          color: #119200;
+          font-weight: 700;
+          text-align: center;
+          display: none; }
+        .container .containerMain .form #formulario .formulario__mensaje-exito-activo {
+          display: block; }
       .container .containerMain .form .title {
         margin: 30px 0px 20px 0px;
         font-weight: bold;
@@ -578,31 +607,47 @@ html {
         display: flex;
         flex-direction: column;
         margin: 20px 0px;
+        position: relative;
         /* mis inputs */ }
         .container .containerMain .form .caja .campo {
-          width: 230px;
+          width: 100%;
           height: 35px;
           padding: 8px 16px;
           background-color: #f9fafb;
           border: none;
           border-radius: 6px;
           font-size: 15px; }
+        .container .containerMain .form .caja .formulario__validacion-estado {
+          position: absolute;
+          right: 10px;
+          bottom: 15px;
+          z-index: 100;
+          font-size: 16px; }
+        .container .containerMain .form .caja .formulario__grupo-correcto .formulario__validacion-estado {
+          color: #1ed12d;
+          opacity: 1; }
+        .container .containerMain .form .caja .formulario__grupo-incorrecto .formulario__validacion-estado {
+          color: #bb2929;
+          opacity: 1; }
       .container .containerMain .form .terminos {
         display: flex;
         font-size: 14px;
         justify-content: center; }
         .container .containerMain .form .terminos .textCond {
           margin-left: 8px; }
-      .container .containerMain .form .btnRegistro {
-        width: 242px;
-        height: 40px;
-        margin: 15px 0;
-        cursor: pointer;
-        border-radius: 5px;
-        border: none;
-        font-size: 15px;
-        background-color: #0b0e32;
-        color: #EFF0FB; }
+      .container .containerMain .form .btnDivRegistro {
+        display: flex;
+        justify-content: center; }
+        .container .containerMain .form .btnDivRegistro .btnRegistro {
+          width: 242px;
+          height: 40px;
+          margin: 15px 0;
+          cursor: pointer;
+          border-radius: 5px;
+          border: none;
+          font-size: 15px;
+          background-color: #0b0e32;
+          color: #EFF0FB; }
       .container .containerMain .form p {
         margin-top: 15px;
         font-size: 14px; }
